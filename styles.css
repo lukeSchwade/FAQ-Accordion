@@ -1,7 +1,88 @@
+@font-face {
+    font-family: workSans;
+    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "workSans";
+}
+
+h1{font-weight: 700;}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+    background-repeat: repeat-x;
+}
+
+/* For Wider Screens */
+@media only screen and (min-width: 600px) {
+    body {background-image: url('/assets/images/background-pattern-desktop.svg');
+        background-repeat: repeat-x;}
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.star-icon {
+    margin-right: 1em;
+}
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto 1rem auto;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    max-width: 36rem;
+    box-shadow: 0 7rem 5rem rgb(218, 214, 218);
+}
+
+summary {
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    list-style:none;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+summary:hover .question{
+    color: #AD28EB;
+}
+
+.question {
+    width: 90%;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+}
+.question-content {
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+summary::marker {
+    content: "";
+  }
 
 
-
-
-
-.attribution { font-size: 11px; text-align: center; }
+  .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
