@@ -54,6 +54,9 @@ I used this project to learn how to create frontend elements that interact with 
  - Best Practice for creating a JS widget skeleton in HTML
  - CSS
  - How to implement keyboard navigation, including the existence of TabIndex which allows elements to be ignored, included, or conditionally ignored by navigating the site using 'Tab'
+ - better understanding of media breakpoints, and 'mobile first' design
+ - Much better understanding of using and manipulating svg files within the DOM
+ - Hover animations
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
