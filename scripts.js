@@ -9,6 +9,8 @@ class Accordion {
         this.summary = el.querySelector('summary');
         // store expanded content
         this.content = el.querySelector('.question-content');
+        //store expand icon
+        this.icon = this.summary.querySelector('.expand-icon');
 
         //store animation object (to cancel it)
         this.animation = null;
@@ -79,7 +81,7 @@ class Accordion {
         this.isExpanding = true;
         //get current fixed height
         const startHeight = `${this.el.offsetHeight}px`;
-        //calc end height (summary hght + content height)
+        //calc end height (summary height + content height)
         const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
 
         //check if already running 
@@ -110,6 +112,13 @@ class Accordion {
     this.isClosing = false;
     this.isExpanding = false;
     this.el.style.height = this.el.style.overflow = '';
+
+    //change icon if open or not
+        if (open) {
+            this.icon.src="/assets/images/icon-minus.svg";
+        } else if (!open) {
+            this.icon.src="/assets/images/icon-plus.svg";
+        }
     }
 }
 //create event listener for each Details accordion
