@@ -30,7 +30,8 @@ Users should be able to:
 
 
 ### Screenshot
-
+![](./assets/images/screenshot-desktop.png)
+![](./assets/images/screenshot-mobile.png)
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -59,19 +60,6 @@ I used this project to learn how to create frontend elements that interact with 
  - Hover animations
  - Proper use of Object constructors, especially useful for organizing animations and more complex code
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
+### Useful resources
 
 https://css-tricks.com/how-to-animate-the-details-element-using-waapi/
