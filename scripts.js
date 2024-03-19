@@ -46,7 +46,7 @@ class Accordion {
         //offsetHeight is border+padding+content, not margin
         const startHeight = `${this.el.offsetHeight}px`;//current height
      
-        const endHeight = `${this.summary.offsetHeight}px`;// calc end height
+        const endHeight = `${this.summary.offsetHeight + 16}px`;// calc end height
         //check if already running
         if (this.animation) {
             this.animation.cancel();
@@ -81,8 +81,8 @@ class Accordion {
         this.isExpanding = true;
         //get current fixed height
         const startHeight = `${this.el.offsetHeight}px`;
-        //calc end height (summary height + content height)
-        const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+        //calc end height (summary height + content height) ALSO NEED TO GET MARGIN   vvv TERRIBLE FIX 
+        const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight + 16}px`;
 
         //check if already running 
         if (this.animation) {
