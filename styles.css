@@ -1,12 +1,12 @@
 @font-face {
     font-family: workSans;
-    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
     font-weight: 100 900;
 }
 
 @font-face {
     font-family: workSans;
-    src: url(/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+    src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
     font-style: italic;
 }
 
@@ -21,13 +21,13 @@ h1{font-weight: 700;}
 
 body {
     background-color: hsl(275, 100%, 97%);
-    background-image: url('/assets/images/background-pattern-mobile.svg');
+    background-image: url('./assets/images/background-pattern-mobile.svg');
     background-repeat: repeat-x;
 }
 
 /* For Wider Screens */
 @media only screen and (min-width: 600px) {
-    body {background-image: url('/assets/images/background-pattern-desktop.svg');
+    body {background-image: url('./assets/images/background-pattern-desktop.svg');
         background-repeat: repeat-x;}
 }
 

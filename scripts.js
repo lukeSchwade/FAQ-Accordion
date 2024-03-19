@@ -115,9 +115,9 @@ class Accordion {
 
     //change icon if open or not
         if (open) {
-            this.icon.src="/assets/images/icon-minus.svg";
+            this.icon.src="./assets/images/icon-minus.svg";
         } else if (!open) {
-            this.icon.src="/assets/images/icon-plus.svg";
+            this.icon.src="./assets/images/icon-plus.svg";
         }
     }
 }
