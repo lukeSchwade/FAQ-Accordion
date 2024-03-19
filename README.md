@@ -57,6 +57,7 @@ I used this project to learn how to create frontend elements that interact with 
  - better understanding of media breakpoints, and 'mobile first' design
  - Much better understanding of using and manipulating svg files within the DOM
  - Hover animations
+ - Proper use of Object constructors, especially useful for organizing animations and more complex code
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -71,3 +72,6 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
+
+
+https://css-tricks.com/how-to-animate-the-details-element-using-waapi/
